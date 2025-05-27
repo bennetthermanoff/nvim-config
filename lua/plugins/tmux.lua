@@ -16,3 +16,8 @@ return {
     end,
   },
 }
+-- tmux configuration for navigation
+-- bind Up if-shell "$is_vim" 'send-keys C-b Up' 'select-pane -U'
+-- bind Down if-shell "$is_vim" 'send-keys C-b Down' 'select-pane -D'
+-- bind Left if-shell "$is_vim" 'send-keys C-b Left' 'select-pane -L'
+-- bind Right if-shell "$is_vim" 'send-keys C-b Right' 'select-pane -R'
